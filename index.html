@@ -6,7 +6,7 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -15,8 +15,11 @@
   <header>
     <nav>
       <div class="logo">Mbufung Marc-brin F.</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -28,11 +31,11 @@
   </header>
 
   <!-- Home -->
-  <section id="home" class="section">
+  <section id="home" class="section home-section">
     <div class="home-content">
       <img src="https://github.com/Mbufung/marcbrin/blob/main/profile.jpg?raw=true" alt="Profile Picture" class="profile-pic">
       <h1>Hello, I'm <span>Mbufung Marc-brin Funtong</span></h1>
-      <p class="tagline">An aspiring Data Scientist & AI expert <br> <em>Exploring the future with data science & AI</em></p>
+      <p class="tagline">Aspiring Data Scientist & AI Expert <br><em>Exploring the future with data science & AI</em></p>
       <div class="buttons">
         <a href="#contact" class="btn">Let's Connect</a>
         <a href="https://github.com/Mbufung/marcbrin/blob/main/MY_Resume.pdf" class="btn" download>Download Resume</a>
@@ -44,165 +47,88 @@
   <section id="about" class="section">
     <h2>About Me<hr></h2>
     <p>
-      I am an aspiring Data Scientist and AI enthusiast, currently pursuing my Bachelor of Computer Applications (BCA) at Lovely Professional University, Phagwara (Punjab). With a strong foundation in C, C++, MySQL, and web development tools, I enjoy building solutions that blend analytical thinking with creativity.
-
-Passionate about data-driven problem solving, I am constantly exploring the fields of artificial intelligence, machine learning, and data science to sharpen my skills and stay ahead in the ever-evolving tech world. My goal is to leverage my knowledge and curiosity to craft impactful solutions that make a real difference.
-
-Beyond academics, I thrive in collaborative environments where ideas flow freely, and I look forward to contributing to projects that challenge my abilities while expanding my horizons.
+      I am an aspiring Data Scientist and AI enthusiast, currently pursuing my Bachelor of Computer Applications (BCA) at Lovely Professional University. Skilled in C, C++, MySQL, and web development, I thrive on blending analytical thinking with creativity.
+      <br><br>
+      Passionate about AI, ML, and data science, I continuously sharpen my skills to craft impactful solutions. I aim to contribute to projects that challenge my abilities while driving innovation.
     </p>
   </section>
 
   <!-- Skills -->
-<section id="skills" class="section">
-  <h2>Skills<hr></h2>
-  <div class="skills-grid">
-
-    <!-- C -->
-    <div class="skill-card">
-      <i class="fas fa-code"></i>
-      <p>C Programming</p>
+  <section id="skills" class="section">
+    <h2>Skills<hr></h2>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fas fa-code"></i><p>C Programming</p></div>
+      <div class="skill-card"><i class="fas fa-laptop-code"></i><p>C++</p></div>
+      <div class="skill-card"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill-card"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill-card"><i class="fas fa-database"></i><p>MySQL</p></div>
+      <div class="skill-card"><i class="fab fa-cisco"></i><p>Cisco Networking</p></div>
     </div>
-
-    <!-- C++ -->
-    <div class="skill-card">
-      <i class="fas fa-laptop-code"></i>
-      <p>C++</p>
-    </div>
-
-    <!-- HTML -->
-    <div class="skill-card">
-      <i class="fab fa-html5"></i>
-      <p>HTML</p>
-    </div>
-
-    <!-- CSS -->
-    <div class="skill-card">
-      <i class="fab fa-css3-alt"></i>
-      <p>CSS</p>
-    </div>
-
-    <!-- MySQL -->
-    <div class="skill-card">
-      <i class="fas fa-database"></i>
-      <p>MySQL</p>
-    </div>
-
-    <!-- Cisco -->
-    <div class="skill-card">
-      <img src="https://cdn.worldvectorlogo.com/logos/cisco-2.svg" alt="Cisco" class="skill-logo">
-      <p>Cisco Networking</p>
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <!-- Projects -->
-<section id="projects" class="section">
-  <h2>Projects <hr></h2>
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-   <div class="project-card">
-  <h3>Mini Music Player</h3>
-  <p>A simple music player built with HTML, CSS, and JavaScript.</p>
-  <div class="project-links">
-    <a href="https://github.com/Mbufung/Music-player" target="_blank">
-      <i class="fab fa-github"></i> Code
-    </a>"
-    <a href="https://marcbrinplayer.netlify.app/" target="_blank">
-      <i class="fas fa-external-link-alt"></i> Live Demo
-    </a>
-  </div>
-</div>
-
-    <!-- Project 2 -->
-    <div class="project-card">
-      <a href="https://mbufung.github.io/calculator/" target="_blank">
-        
-      </a>
-      <h3>Calculator</h3>
-      <p>A mini calculator with OOPs</p>
-      <div class="project-links">
-        <a href="https://github.com/Mbufung/calculator"target="_blank">
-          <i class="fab fa-github"></i> Code
-        </a>
-        <a href="https://your-second-project-link.com" target="_blank">
-          <i class="fas fa-external-link-alt"></i> Live Demo
-        </a>
+  <section id="projects" class="section">
+    <h2>Projects <hr></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Mini Music Player</h3>
+        <p>A modern music player built with HTML, CSS, and JavaScript.</p>
+        <div class="project-links">
+          <a href="https://github.com/Mbufung/Music-player" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a href="https://marcbrinplayer.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Calculator</h3>
+        <p>A stylish OOPs-based calculator.</p>
+        <div class="project-links">
+          <a href="https://github.com/Mbufung/calculator" target="_blank"><i class="fab fa-github"></i> Code</a>
+          <a href="https://mbufung.github.io/calculator/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
       </div>
     </div>
-
-  </div>
-</section>
+  </section>
 
   <!-- Education -->
   <section id="education" class="section">
     <h2>Education <hr></h2>
-    <section>
-        <h3>Bachelor of Computer Applications (BCA)</h3>
-        <p>Lovely Professional University, Phagwara (Punjab) | 2024 - Present</p>
-    </section>
-    <br>
-    <section>
-        <h3>Higher National Diploma in Telecommunications</h3>
-        <p>University Institute of Science and Technology | 2020 - 2022</p>
+    <div class="edu-card">
+      <h3>BCA - Lovely Professional University</h3>
+      <p>2024 - Present</p>
+    </div>
+    <div class="edu-card">
+      <h3>Higher National Diploma in Telecommunications</h3>
+      <p>2020 - 2022 | University Institute of Science & Technology</p>
+    </div>
+    <div class="edu-card">
+      <h3>General Certificate of Education (GCE)</h3>
+      <p>2015 - 2019 | CCSS & ASEC Foundation</p>
+    </div>
   </section>
-  <br>
-  <section>
-    <h3>General Certificate of Education (GCE)</h3>
-    <p>Christian Comprehensive Secondary School Nkolmbong | 2017 - 2019</p>
-  </section>
-  <br>
-    <section>
-        <h3>General Certificate of Education (GCE)</h3>
-        <p>ASEC Foundation Complex | 2015 - 2017</p>
-    </section>
-</section>
-  <!-- Experience -->
+
+  <!-- Certificate -->
   <section id="certificate" class="section">
     <h2>Certificate <hr></h2>
-    <section>
-        <h3>AI chatbot development bootcamp certificate</h3>
-        <p>Completed a bootcamp under YHILLs Edutech for AI chatbot development</p>
-       <div class="button">
-        <a href="https://github.com/Mbufung/My_portfolio1/blob/main/certificate.pdf" class="btn">See here</a>
-       </div>
-
-
+    <div class="certificate-card">
+      <h3>AI Chatbot Development Bootcamp</h3>
+      <p>Completed under YHILLs Edutech</p>
+      <a href="https://github.com/Mbufung/My_portfolio1/blob/main/certificate.pdf" class="btn">See Certificate</a>
+    </div>
   </section>
 
   <!-- Contact -->
   <section id="contact" class="section">
-    <h2>Contact Me </h2>
-    <fieldset>
-        <legend>Let's Connect!</legend>
-        <table cellspacing="5" cellpadding="5">
-            <form action="#" method="post">
-                <tr>
-                    <td><label for="name">Name:</label></td>
-                    <td><input type="text" id="name" name="name" required></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Email:</label></td>
-                    <td><input type="email" id="email" name="email" required></td>
-                </tr>
-                <tr>
-                    <td><label for="message">Message:</label></td>
-                    <td><textarea id="message" name="message" rows="4" required></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><button type="submit">Send Message</button></td>
-                </tr>
-            </form>
-        </table>
-    </fieldset>
-    <br>
-    <br>
-    <p>You can reach me through:</p>
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
     <div class="social-icons">
       <a href="https://github.com/Mbufung?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
       <a href="http://www.linkedin.com/in/mbufung-marc-brin-funtong-b3b979317" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/unique_mcbrin/?__pwa=1#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/unique_mcbrin/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="mailto:mbufungmarcbrin@gmail"><i class="fas fa-envelope"></i></a>
     </div>
   </section>
